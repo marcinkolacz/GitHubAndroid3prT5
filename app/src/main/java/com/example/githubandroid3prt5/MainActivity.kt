@@ -13,6 +13,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(findViewById(R.id.toolbar))
+        val napis = "1"
+        var liczba = 1;
+        //napis.toString()
+        liczba = Integer.parseInt(napis);
+
 
         findViewById<FloatingActionButton>(R.id.fab).setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
